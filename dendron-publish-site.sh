@@ -1,7 +1,7 @@
+rm -rf .next
+rm -rf node_modules
+rm package*.json
+rm -rf docs
 ./dendron-prereqs.sh
-npx dendron publish init && cp .node-version .next/ && cd .next
-npm install && cd ..
-npx dendron publish build && cd .next
-npm install && npx next build && npx next export && cd ..
-mv .next/out docs
-#cat _includes/subscribe.html >> docs/nav.html
+npx dendron publish init
+npx dendron publish export --target github
