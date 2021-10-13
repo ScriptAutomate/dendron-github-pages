@@ -28,6 +28,8 @@ scratch:
     dateFormat: y.MM.dd.HHmmss
     addBehavior: asOwnDomain
 site:
+    siteUrl: https://scriptautomate.github.io
+    assetsPrefix: /dendron-github-pages
     copyAssets: true
     siteHierarchies:
         - root
